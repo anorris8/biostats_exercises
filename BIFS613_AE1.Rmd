@@ -1,0 +1,53 @@
+---
+title: "BIFS-613 AE1 Part III: RMarkdown"
+author: "First Last"
+date: "09/01/2019"
+output:
+  html_document: default
+---
+
+### Code Chunk 1: Setup
+
+```{r setup, include=FALSE}
+### We use the code chunk option "include=FALSE" because we don't need to print this information
+
+### Global knitr options
+knitr::opts_chunk$set(echo = TRUE)
+
+### Load packages/libraries that we will need
+library(sessioninfo)
+```
+
+### Code Chunk 2: Create variable x1
+
+```{r}
+### Enter code in here
+
+```
+
+### Code Chunk 3: Histogram of x1
+
+```{r}
+### Enter code in here
+
+```
+
+### Code Chunk 4: Create variables x2 and x3 using set.seed()
+
+```{r}
+### Enter code in here
+
+```
+
+### Code Chunk 5: Plot x2 vs. x1 and x2 vs. x3
+
+```{r}
+### Enter code in here
+
+```
+
+### Code Chunk 6: Session info
+
+```{r}
+session_info()
+```

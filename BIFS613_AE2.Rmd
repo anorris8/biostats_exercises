@@ -1,0 +1,161 @@
+---
+title: "BIFS-613 AE2 Part I: RMarkdown"
+author: "First Last"
+date: "09/01/2019"
+output:
+  html_document: default
+---
+
+## Setup
+
+### Code Chunk 1: Load packages
+
+```{r setup, include=FALSE}
+### We use the code chunk option "include=FALSE" because we don't need to print this information
+
+### Global knitr options
+knitr::opts_chunk$set(echo = TRUE)
+
+### Load packages/libraries that we will need
+library(tidyverse)
+```
+
+### Code Chunk 2: Load data
+
+```{r}
+exprs <- read_csv("TP53_exprs.csv")
+```
+
+## A. TP53 expression by cancer type/tissue
+
+### Code Chunk 3: This is a bad barplot
+
+```{r}
+### Using geom_col
+ggplot(exprs, aes(x = tissue, y = exprs)) +
+  geom_col()
+
+### Alternative, using geom_bar
+ggplot(exprs, aes(x = tissue, y = exprs)) +
+  geom_bar(stat = "identity")
+```
+
+### Code Chunk 4: Plot instead as a boxplot
+
+```{r}
+### Enter code in here
+```
+
+### Code Chunk 5: Add individual data points
+
+```{r}
+### Enter code in here
+
+```
+
+### Code Chunk 6:"Jitter" the points
+
+```{r}
+### Enter code in here
+
+```
+
+### Code Chunk 7: Remove outlier points from boxplot
+
+```{r}
+### Enter code in here
+
+```
+
+### Code Chunk 8: Color points by sex
+
+```{r}
+### Enter code in here
+
+```
+
+### Code Chunk 9: Use custom colors
+
+(female = red; male = blue)
+
+```{r}
+### Enter code in here
+
+```
+
+### Code Chunk 10: Add theme
+
+(see: https://ggplot2.tidyverse.org/reference/ggtheme.html)
+
+```{r}
+### Enter code in here
+
+```
+
+### Code Chunk 11: Angle x-axis labels (tissue types)
+
+```{r}
+### Enter code in here
+
+```
+
+### Code Chunk 12: Plot title
+
+```{r}
+### Enter code in here
+
+```
+
+### Code Chunk 13: Save the plot
+
+```{r}
+### Enter code in here
+
+```
+
+## B. TP53 expression by age
+
+### Code Chunk 14: Exprs vs. Age
+
+```{r}
+### Enter code in here
+
+```
+
+### Code Chunk 15: Linear regression
+
+```{r}
+### Enter code in here
+
+```
+
+### Code Chunk 16: By sex
+
+```{r}
+### Enter code in here
+
+```
+
+### Code Chunk 17: Additional formatting
+
+Use theme and female/male colors used for previous plot above (p53_exprs_tissue.png), and add a title.
+
+```{r}
+### Enter code in here
+
+```
+
+### Code Chunk 18: Save the plot
+
+```{r}
+### Enter code in here
+
+```
+
+## Session info
+
+### Code Chunk 19
+
+```{r}
+sessionInfo()
+```
